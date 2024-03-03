@@ -81,3 +81,5 @@ require("lsp_signature").setup(cfg) -- no need to specify bufnr if you don't use
 vim.keymap.set({ "n" }, "<C-k>", function()
   vim.lsp.buf.signature_help()
 end, { silent = true, noremap = true, desc = "toggle signature" })
+
+vim.g.better_escape_interval = 70
