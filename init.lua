@@ -82,4 +82,3 @@ require("config.lazy")
 --   vim.lsp.buf.signature_help()
 -- end, { silent = true, noremap = true, desc = "toggle signature" })
 --
-vim.g.better_escape_interval = 70

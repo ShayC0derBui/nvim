@@ -60,10 +60,10 @@ return {
       mapping = cmp.mapping.preset.insert({
         -- <CR> accepts currently selected item.
         -- Set `select` to `false` to only confirm explicitly selected items.
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
         ["<S-CR>"] = cmp.mapping.confirm({
           behavior = cmp.ConfirmBehavior.Replace,
-          select = false,
+          select = true,
         }),
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-n>"] = cmp.mapping.select_next_item({

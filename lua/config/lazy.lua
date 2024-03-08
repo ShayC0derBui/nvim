@@ -46,3 +46,4 @@ require("lazy").setup({
     },
   },
 })
+vim.g.better_escape_interval = 70
