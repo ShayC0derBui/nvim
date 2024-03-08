@@ -82,3 +82,11 @@ require("config.lazy")
 --   vim.lsp.buf.signature_help()
 -- end, { silent = true, noremap = true, desc = "toggle signature" })
 --
+-- Define a function to run Prettier formatting
+local function runPrettier()
+  -- Call CocAction to run the Prettier formatting command
+  vim.api.nvim_command('call CocAction("runCommand", "prettier.formatFile")')
+end
+
+-- Define the command using vim.api.nvim_command
+vim.api.nvim_command("command! -nargs=0 Prettier :lua runPrettier()")
