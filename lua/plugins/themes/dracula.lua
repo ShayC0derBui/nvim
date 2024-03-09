@@ -38,10 +38,4 @@ return {
       })
     end,
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "dracula-soft",
-    },
-  },
 }
